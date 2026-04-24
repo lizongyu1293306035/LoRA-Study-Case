@@ -2,3 +2,5 @@ peft
 datasets
 bitsandbytes
 modelscope
+jieba
+rouge-chinese

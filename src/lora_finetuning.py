@@ -16,7 +16,7 @@ print("显卡是否可用：" + str(torch.cuda.is_available()))
 # =================================需要修改的一些变量 Start =================================
 
 # Qwen模型的参数文件路径
-model_file_path = r".\model\qwen"
+model_file_path = r"..\model\qwen"
 
 # 设置模型加载的设备，cuda:0 为使用第一个显卡资源。device="cpu" 为调用CPU资源进行训练
 device = "cuda:0"
@@ -25,13 +25,13 @@ device = "cuda:0"
 system_prompt = "你是一个煤矿安全领域的专家，请帮我生成风险分析报告"
 
 # 训练数据的文件路径
-data_file_path = r".\data\analysis_data.json"
+data_file_path = r"..\data\analysis_data.json"
 
 # 每条训练数据的最大长度，分词器会将一个中文字切分为多个token，因此需要放开一些最大长度，保证数据的完整性
 MAX_LENGTH = 2048
 
 # LoRA微调后的模型文件输出路径
-output_dir = r".\model\qwen-lora"
+output_dir = r"..\model\qwen-lora"
 
 # =================================需要修改的一些变量 End ===================================
 
